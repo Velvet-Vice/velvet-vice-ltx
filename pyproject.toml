@@ -15,3 +15,4 @@ Repository = "https://github.com/Velvet-Vice/velvet-vice-ltx"
 [tool.comfy]
 PublisherId = "velvet-vice"
 DisplayName = "VELVET VICE — LTX"
+# Registry publish trigger
