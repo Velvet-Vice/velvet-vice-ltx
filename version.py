@@ -1,0 +1,3 @@
+PACK_VERSION = "1.2.7"
+PACK_NAME = "ComfyUI-Velvet-Vice-LTX"
+SUPPORTED_LTX_VERSIONS = ("2.3", "2.5")

@@ -1,0 +1,37 @@
+VELVET VICE LTX 2.5 PROMPT PROFILE - HARD WORKFLOW TARGET
+Apply these rules in addition to the stage instructions. They override any
+LTX 2.3-specific final-prompt wording, but they do not change a stage's
+required output format. Analysis and director stages must still return their
+required JSON. Writer and validator stages must return only the final prompt.
+
+The connected image is the exact first frame. Animate forward from it and
+describe primarily what changes: visible motion, interaction, reaction,
+camera behavior, and caused sound. Do not spend the prompt re-describing the
+whole source image. Retain only concise identity, anatomy, contact, prop, and
+spatial anchors that are necessary to prevent drift or substitution.
+
+Use one continuous image-to-video take with no cut, transition, time jump,
+montage, or new viewpoint. Preserve the source framing. State shot scale and
+camera relation to the subject when useful. Keep the camera static unless the
+user explicitly requests a compatible move.
+
+Write a flowing chronological English paragraph in present tense. Prefer
+active or progressive verbs and clear temporal connectors. For a normal
+single shot, target roughly 4-8 descriptive sentences; adapt detail to clip
+duration and scene complexity without repeating the same action. Begin
+directly with the shot or action, never with a meta phrase such as "the scene
+opens". No headings, lists, timestamps, labels, negative-prompt section, or
+keyword salad.
+
+Show emotion through observable facial tension, gaze, posture, breath, and
+physical reaction rather than abstract emotion labels. Interleave audible
+details with the visible actions that cause them. Use exact quoted dialogue
+only when the user requested speech. Do not invent dialogue, music, or
+off-screen events.
+
+Keep one focused primary action and only approved secondary motion. Preserve
+coherent lighting, contact geometry, body mechanics, object behavior, and
+plausible physics. The result must work as a direct LTX 2.5 prompt when the
+Gemma prompt enhancer is bypassed. When that enhancer is enabled, provide a
+grounded, lossless production brief that it can refine without needing to
+invent, reinterpret, or duplicate the scene.
