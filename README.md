@@ -1,4 +1,4 @@
-# VELVET VICE LTX 2.3 + 2.5 v1.2.7
+# VELVET VICE LTX 2.3 + 2.5 v1.2.8
 
 One versioned custom-node pack shared by the separate LTX 2.3 and LTX 2.5
 Velvet Vice workflows.
@@ -9,9 +9,34 @@ Recommended: install `VELVET VICE — LTX` directly through ComfyUI Manager /
 Comfy Registry (`velvet-vice-ltx`), then restart ComfyUI and hard-refresh the
 browser with `Ctrl+F5`.
 
-The complete Civitai release also includes the versioned one-click installer
-`_START_HERE_INSTALL_V1.2.7.cmd` as a manual/offline fallback. Never merge an
-older Velvet Vice LTX custom-node directory into a newer release.
+The canonical Manager/Registry install folder is:
+
+`ComfyUI/custom_nodes/velvet-vice-ltx`
+
+Use only one copy of the package in `custom_nodes`. Older manual/Civitai copies
+may exist under legacy names such as:
+
+- `ComfyUI-Velvet-Vice-LTX`
+- `ComfyUI-Velvet-Vice-LTX-main`
+- `velvet-vice-ltx-main`
+
+If a legacy copy remains beside the Manager-owned `velvet-vice-ltx` folder,
+ComfyUI can keep loading the Velvet Vice LTX nodes even after Manager has
+uninstalled its own tracked package. This makes Manager Uninstall look broken
+although the Manager-owned folder was removed correctly.
+
+For a one-time cleanup of those old duplicate folders, close ComfyUI and run:
+
+`_CLEAN_LEGACY_LTX_DUPLICATES.cmd`
+
+The cleanup tool deliberately does **not** delete the canonical Manager-owned
+`velvet-vice-ltx` folder. Normal installs, updates and uninstalls should be done
+through ComfyUI Manager after legacy duplicates have been removed.
+
+The complete Civitai release can still include a versioned one-click installer
+as a manual/offline fallback, but that installer should also target the same
+canonical folder name `velvet-vice-ltx`. Never merge an older Velvet Vice LTX
+custom-node directory into a newer release.
 
 ## Versioned autonomous prompt logic
 
@@ -59,3 +84,10 @@ The LTX 2.3 branch and the existing Director, Power LoRA, Player, Live Preview,
 Watermark, three-pass render, postprocessing and UI behavior remain unchanged.
 
 The `web` directory contains exactly six JavaScript files.
+
+## Registry
+
+- Publisher: `velvet-vice`
+- Node ID: `velvet-vice-ltx`
+- Version: `1.2.8`
+- Display name: `VELVET VICE — LTX`
