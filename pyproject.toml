@@ -1,6 +1,6 @@
 [project]
 name = "velvet-vice-ltx"
-version = "1.2.7"
+version = "1.2.8"
 description = "Velvet Vice custom nodes shared by the LTX 2.3 and LTX 2.5 ComfyUI workflows."
 license = { file = "LICENSE" }
 requires-python = ">=3.10"
